@@ -22,4 +22,6 @@ COPY openvpn.sh /usr/bin/
 
 VOLUME ["/vpn"]
 
+COPY pia.crt /vpn/
+
 ENTRYPOINT ["openvpn.sh"]
